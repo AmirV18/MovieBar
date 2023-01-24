@@ -10,14 +10,6 @@ import SearchIcon from './search.svg';
 
 const API_URL = 'http://www.omdbapi.com?apikey=eafee3d2';
 
-const movie1 = {
-   "Title": "Amazing Spiderman Syndrome",
-   "Year": "2012",
-   "imdbID": "tt2586634",
-   "Type": "movie",
-   "Poster": "N/A"
-}
-
 const App = () => { //Main component that is rendered in index.js
 
    const [movies, setMovies] = useState([]);
@@ -31,7 +23,7 @@ const App = () => { //Main component that is rendered in index.js
    }
 
    useEffect(() =>{ //useEffect is a function that takes two parameters, a callback funciton and an array
-      searchMovies('Spiderman');
+      searchMovies("Avengers");
 
    }, []);
 
