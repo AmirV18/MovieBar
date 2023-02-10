@@ -29,7 +29,7 @@ const App = () => { //Main component that is rendered in index.js
 
    return(
       <div className='app'>
-         <h1>MovieLand</h1>
+         <h1>MovieBar</h1>
 
          <div className='search'>
             <input
