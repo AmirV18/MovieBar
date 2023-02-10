@@ -27,15 +27,23 @@ const App = () => { //Main component that is rendered in index.js
 
    }, []);
 
+   const handleKeyPress = (event) => {
+      if (event.key === "Enter") {
+        searchMovies(searchTerm);
+      }
+   };
+
    return(
       <div className='app'>
          <h1>MovieBar</h1>
 
          <div className='search'>
             <input
+               id = "searchBar"
                placeholder='Search for movies'
                value={searchTerm}
                onChange={(e) => setSearchTerm(e.target.value)}
+               onKeyPress={handleKeyPress}
             />
             <img
                src = {SearchIcon}
